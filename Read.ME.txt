@@ -1,0 +1,78 @@
+#Restaurant Sipariş Sistemi#
+
+Bu proje, restoranlarda masa siparişleri ve paket siparişleri kolay şekilde yönetebilmek için geliştirilmiş basit ama işlevsel bir sipariş takip uygulamasıdır. Uygulama iki ana parçadan oluşuyor: MVC arayüzü ve Web API.
+
+Amacım; menü, sepet, sipariş oluşturma, masa siparişlerini görme ve siparişleri tamamlama gibi temel işlemleri temiz bir arayüzle sunmak oldu. Ayrıca yöneticiler için ürün ve kategori yönetimi de ekledim.
+
+ #Özellikler#
+
+Menü listeleme
+
+Sepete ürün ekleme / çıkarma
+
+Masa sipariş detaylarını görüntüleme
+
+Siparişleri ödeme tamamlandı şeklinde işaretleme
+
+Geçmiş siparişleri görüntüleme
+
+Ürün ve kategori yönetimi
+
+Kimlik doğrulama (kayıt, giriş, çıkış)
+
+API üzerinden tüm işlemlerin yapılabilmesi
+
+Swagger ile API dokümantasyonu
+
+Restorana uygun koyu bir tema ve sade tasarım
+
+#Kullanılan Teknolojiler#
+
+ASP.NET Core MVC
+
+ASP.NET Core Web API
+
+Entity Framework Core
+
+MSSQL
+
+ASP.NET Core Identity
+
+Bootstrap 5
+
+Swagger
+
+ Proje Yapısı
+RestaurantSolution
+
+ #RestaurantAPI       - API projesi
+    -Controllers      - API controller dosyaları
+    -Models           - Veri modelleri
+   
+
+ #RestaurantMVC        - MVC arayüz projesi
+     -Controllers
+     -Views
+     -Models
+     -wwwroot
+
+# Kurulum#
+
+Projeyi bilgisayarınıza klonlayın.
+
+appsettings.json dosyasında MSSQL bağlantı cümlesini kendinize göre düzenleyin.
+
+API ve MVC projeleri için migration oluşturun:
+
+add-migration init
+update-database
+
+
+Hem RestaurantAPI hem de RestaurantMVC projelerini çalıştırın.
+
+API otomatik olarak Swagger sayfası ile açılacaktır.
+
+ Kimlik Doğrulama
+
+MVC tarafında giriş yapmak için önce bir kullanıcı oluşturmanız gerekir. Kayıt ekranından hesap oluşturduktan sonra sisteme giriş yapabilirsiniz.
+

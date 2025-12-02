@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "RestaurantAPI\\RestaurantAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RestaurantMVC\\RestaurantMVC.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
